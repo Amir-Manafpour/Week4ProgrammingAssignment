@@ -1,4 +1,4 @@
-The tidy dataset (included in the output files of this repository) contains the following variables from the original database:
+The tidy dataset (included in the output files of this repository) contains the following variables:
 
  [1] "subject_id"                      "activity_id"                     "record_type"                     "tBodyAcc-mean()-X"              
  [5] "tBodyAcc-mean()-Y"               "tBodyAcc-mean()-Z"               "tBodyAcc-std()-X"                "tBodyAcc-std()-Y"               
@@ -23,6 +23,6 @@ The tidy dataset (included in the output files of this repository) contains the 
 [77] "fBodyBodyGyroMag-mean()"         "fBodyBodyGyroMag-std()"          "fBodyBodyGyroMag-meanFreq()"     "fBodyBodyGyroJerkMag-mean()"    
 [81] "fBodyBodyGyroJerkMag-std()"      "fBodyBodyGyroJerkMag-meanFreq()" "activity_name"
 
-The "activity_name" corresponds to the "activity_id" for each record. Also, the "record_type" variable defines if the record is from the test dataset or the train dataset.
+The majority of these variables are taken directly from the original dataset. However, only a subset of the mean and standard deviation of all the variables are included in the output file.
 
-Only a subset of the mean and standard deviation of all the variables are included in the output file.
+The "activity_name" corresponds to the "activity_id" for each record. Also, the "record_type" variable defines if the record is from the test dataset or the train dataset.
