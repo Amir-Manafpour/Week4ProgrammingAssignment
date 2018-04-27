@@ -1,4 +1,4 @@
-The tidy dataset (included in the output files of this repository) contains the following variables:
+The tidy dataset (included in the output files of this repository contains the following variables:
 
  [1] "subject_id"                      "activity_id"                     "record_type"                     "tBodyAcc-mean()-X"              
  [5] "tBodyAcc-mean()-Y"               "tBodyAcc-mean()-Z"               "tBodyAcc-std()-X"                "tBodyAcc-std()-Y"               

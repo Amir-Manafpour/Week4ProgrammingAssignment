@@ -1,6 +1,6 @@
 library(dplyr)
 
-main_direc <- "C:\\Users\\amanafpour\\Desktop\\rstudio files\\data-cleaning course\\Week 4 Assignment\\UCI HAR Dataset\\"
+main_direc <- ".\\"
 test_direc <- paste(main_direc, "test\\", sep = "")
 train_direc <- paste(main_direc, "train\\", sep = "")
 
@@ -48,5 +48,5 @@ summary_table <- as_tibble(subset_df) %>%
   summarise_at(.vars = names(.)[4:82], .funs = c(mean = "mean"))
 
 #Write data sets to files
-write.csv(subset_df, paste(main_direc, "output_dataset.csv"))
-write.csv(summary_table, paste(main_direc, "output_summary.csv"))
+write.table(subset_df, paste(main_direc, "output_dataset.txt"), row.names = FALSE)
+write.table(summary_table, paste(main_direc, "output_summary.txt"), row.names = FALSE)
